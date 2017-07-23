@@ -25,6 +25,16 @@ class LibrariesActivity : AppCompatActivity() {
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/PhilJay/MPAndroidChart"))
             startActivity(browserIntent)
         })
+
+        settingsLibrariesRetrofit.setOnClickListener({
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/square/retrofit"))
+            startActivity(browserIntent)
+        })
+
+        settingsLibrariesEventBus.setOnClickListener({
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/greenrobot/EventBus"))
+            startActivity(browserIntent)
+        })
     }
 
 }
