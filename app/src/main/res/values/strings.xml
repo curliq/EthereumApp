@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ethereum App</string>
+    <string name="preferences_key">EthereumAppPrefs</string>
+    <string name="wallet_data">WalletData</string>
+    <string name="ethereum_data">EthereumData</string>
+    <string name="ethereum_vs_usd">EthereumVsUSD</string>
+    <string name="ethereum_vs_btc">EthereumVsBTC</string>
+    <string name="ether_requested_timestamp">EtherRequestedTimestamp</string>
+    <string name="ether_market_cap">EtherMarketCap</string>
+    <string name="usd_vs_gbp">UsdVsGBP</string>
+    <string name="usd_vs_eur">UsdVsEUR</string>
+    <string name="chart_data">ChartData</string>
+    <string name="ether_volume">EtherVolume</string>
+    <string name="ether_change_24h">Change24H</string>
+</resources>

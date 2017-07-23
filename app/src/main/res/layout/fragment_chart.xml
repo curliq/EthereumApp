@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="42dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last 24h"
+            android:textSize="12sp"
+            android:textColor="#d5d5d5"
+            android:layout_above="@+id/chartScreenPercentageTextChange"
+            />
+
+        <TextView
+            android:id="@+id/chartScreenPercentageTextChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+00.00%"
+            android:gravity="bottom"
+            android:layout_alignBaseline="@+id/chartScreenEtherValueText"
+            android:textColor="@color/up_green"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/chartScreenRocketUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/chartScreenEtherValueText"
+            android:baselineAlignBottom="true"
+            android:layout_toRightOf="@+id/chartScreenPercentageTextChange"
+            android:layout_toEndOf="@+id/chartScreenPercentageTextChange"
+            android:rotation="-45"
+            app:srcCompat="@drawable/ic_rocket_up" />
+
+        <ImageView
+            android:id="@+id/chartScreenRocketDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/chartScreenEtherValueText"
+            android:baselineAlignBottom="true"
+            android:layout_toRightOf="@+id/chartScreenPercentageTextChange"
+            android:layout_toEndOf="@+id/chartScreenPercentageTextChange"
+            android:rotation="135"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_rocket_down" />
+
+
+        <TextView
+            android:id="@+id/chartScreenEtherCurrencyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/chartScreenEtherValueText"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/chartScreenEtherValueText"
+            android:text="$"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/chartScreenEtherValueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="1590.08"
+            android:textColor="@color/colorPrimary"
+            android:textSize="42sp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/chartScreenUpdatedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="26dp"
+        android:text="Updated 5m ago"
+        android:textColor="#bababa"
+        android:textSize="12sp" />
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chartScreenChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="2"
+        android:clipToPadding="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:layout_marginTop="42dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:text="Market cap" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="4dp"
+                    android:gravity="bottom"
+                    android:text="$"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/chartScreenMarketCapNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:text="21,232,030,309"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:text="Volume (24h)" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="4dp"
+                    android:gravity="bottom"
+                    android:text="$"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/chartScreenVolumeNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:text="21,232,030,309"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

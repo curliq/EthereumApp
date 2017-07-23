@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <EditText
+        android:id="@+id/fragmentInputWalletName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:hint="Name this wallet (optional)"
+        android:textColorHint="#d8d8d8"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/fragmentInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:inputType="numberDecimal"
+        android:hint="Address eg.: 0x49F414F73af16c527dEdBf8FB76F894c67d36055"
+        android:textColorHint="#d8d8d8"
+        android:paddingTop="20dp"/>
+
+    <Button
+        android:id="@+id/fragmentInputConfirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:padding="30dp"
+        android:text="Confirm"
+        android:textColor="#fff"
+        app:backgroundTint="@color/colorPrimary"/>
+
+</LinearLayout>

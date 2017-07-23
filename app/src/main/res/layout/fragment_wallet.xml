@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout android:id="@+id/walletLayoutPickOption"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            style="@style/ScreenTitleText"
+            android:text="Track your wallet"
+            android:layout_margin="32dp"
+            />
+
+        <Button
+            android:id="@+id/walletInputAddressButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input your wallet address"
+            android:background="@drawable/input_address_option_background"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="OR"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_margin="24dp"/>
+
+        <Button
+            android:id="@+id/walletInputAmountButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input the amount you hodl"
+            android:textAllCaps="false"
+            android:background="@drawable/input_amount_option_background"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/walletScreenInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/walletScreenTabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tabSelectedTextColor="#000000"
+                app:tabTextColor="#7d000000"
+                app:tabIndicatorColor="#000000"
+                app:tabMode="scrollable"
+                app:tabTextAppearance="@style/NonCapsTabsText"
+                android:fadeScrollbars="false"
+                />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/walletScreenViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
