@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ethereum App</string>
+    <string name="app_name">Ether Checker</string>
     <string name="preferences_key">EthereumAppPrefs</string>
     <string name="wallet_data">WalletData</string>
     <string name="ethereum_data">EthereumData</string>

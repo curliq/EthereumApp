@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ethereum.app">
+    package="com.ether.checker">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -16,19 +16,19 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ethereum.app.MainActivity">
+        <activity android:name="com.ether.checker.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".settings.screens.AboutActivity"/>
-        <activity android:name=".settings.screens.DonateActivity"/>
-        <activity android:name=".settings.screens.ApisActivity"/>
-        <activity android:name=".settings.screens.LibrariesActivity"/>
-        <activity android:name=".settings.screens.donate.DonateEtherActivity"/>
-        <activity android:name=".settings.screens.donate.DonateFiatActivity"/>
+        <activity android:name="com.ether.checker.settings.screens.AboutActivity"/>
+        <activity android:name="com.ether.checker.settings.screens.DonateActivity"/>
+        <activity android:name="com.ether.checker.settings.screens.ApisActivity"/>
+        <activity android:name="com.ether.checker.settings.screens.LibrariesActivity"/>
+        <activity android:name="com.ether.checker.settings.screens.donate.DonateEtherActivity"/>
+        <activity android:name="com.ether.checker.settings.screens.donate.DonateFiatActivity"/>
     </application>
 
 </manifest>
